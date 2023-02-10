@@ -20,4 +20,4 @@ ActionView::Template::Error: The asset "alex_jpeg.jpeg" is not present in the as
 
 ------------
 
-If you use [this PR]([url](https://github.com/rails/sprockets/pull/781)), the tests pass.
+If you use [this PR](https://github.com/rails/sprockets/pull/781), the tests pass.
