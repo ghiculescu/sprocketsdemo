@@ -7,7 +7,7 @@ http://localhost:3000/?ext=jpg and http://localhost:3000/?ext=jpeg both load, an
 
 -----------
 
-In test it fails. Run tests with `bin/rails assets:precompile test` to see the issue.
+In test it fails. Run tests with `bin/rails assets:clobber assets:precompile test` to see the issue.
 
 ```
 Error:
