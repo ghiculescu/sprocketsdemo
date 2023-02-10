@@ -17,3 +17,7 @@ ActionView::Template::Error: The asset "alex_jpeg.jpeg" is not present in the as
     app/views/site/index.html.erb:1
     test/controllers/site_controller_test.rb:5:in `block in <class:SiteControllerTest>'
 ```
+
+------------
+
+If you use [this PR]([url](https://github.com/rails/sprockets/pull/781)), the tests pass.
