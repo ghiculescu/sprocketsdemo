@@ -1,24 +1,19 @@
-# README
+Replication for https://github.com/rails/sprockets-rails/issues/304
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-----------
 
-Things you may want to cover:
+In development it doesn't crash.
+http://localhost:3000/?ext=jpg and http://localhost:3000/?ext=jpeg both load, and serve different files.
 
-* Ruby version
+-----------
 
-* System dependencies
+In test it fails. Run tests with `bin/rails assets:precompile test` to see the issue.
 
-* Configuration
+```
+Error:
+SiteControllerTest#test_jpeg:
+ActionView::Template::Error: The asset "alex_jpeg.jpeg" is not present in the asset pipeline.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    app/views/site/index.html.erb:1
+    test/controllers/site_controller_test.rb:5:in `block in <class:SiteControllerTest>'
+```
